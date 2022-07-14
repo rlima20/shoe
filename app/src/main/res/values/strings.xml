@@ -1,16 +1,24 @@
 <resources>
     <string name="app_name">ShoeStore</string>
     <string name="email">E-mail</string>
+    <string name="hint_email">Write your best E-mail</string>
     <string name="password">Password</string>
+    <string name="hint_password">Write your password</string>
     <string name="new_account">New account</string>
     <string name="login">Login</string>
-    <string name="welcome_1">Welcome1</string>
-    <string name="welcome_2">Welcome2</string>
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
     <string name="instructions_btn">Instructions</string>
     <string name="instructions_1">Instructions1</string>
     <string name="instructions_2">Instructions2</string>
-    <string name="list_shoes">List shoes</string>
+    <string name="list_shoes">List of shoes</string>
     <string name="log_out">Logout</string>
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
+    <string name="btnAdd">Add button</string>
+    <string name="name">Shoe</string>
+    <string name="size">39</string>
+    <string name="company">Nike</string>
+    <string name="description">Air Max</string>
+    <string name="images">Images</string>
 </resources>
