@@ -2,6 +2,9 @@ package com.udacity.shoestore.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -19,6 +22,7 @@ class ShoeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
+        setHasOptionsMenu(true)
         return binding.root
     }
 
@@ -33,6 +37,24 @@ class ShoeListFragment : Fragment() {
                 ShoeListFragmentDirections
                     .actionShoeListFragmentToShoeDetailFragment()
             )
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        super.onCreateOptionsMenu(menu, inflater)
+        inflater.inflate(R.menu.overflow_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.loginFragment -> {
+                findNavController().navigate(
+                    ShoeListFragmentDirections
+                        .actionShoeListFragmentToLoginFragment()
+                )
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
