@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="email">E-mail</string>
+    <string name="password">Password</string>
+    <string name="new_account">New account</string>
+    <string name="login">Login</string>
+    <string name="welcome_1">Welcome1</string>
+    <string name="welcome_2">Welcome2</string>
+    <string name="instructions_btn">Instructions</string>
+    <string name="instructions_1">Instructions1</string>
+    <string name="instructions_2">Instructions2</string>
+    <string name="list_shoes">List shoes</string>
+    <string name="log_out">Logout</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources>
