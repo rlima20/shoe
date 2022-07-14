@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.udacity.shoestore.fragment.welcomeFragment"
+        android:name="com.udacity.shoestore.fragment.WelcomeFragment"
         android:label="welcomeFragment"
         tools:layout="@layout/fragment_welcome">
         <action

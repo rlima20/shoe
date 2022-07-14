@@ -8,20 +8,19 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
-import com.udacity.shoestore.databinding.FragmentShoeDetailBinding
+import com.udacity.shoestore.databinding.FragmentWelcomeBinding
 
-class ShoeDetailFragment : Fragment() {
+class WelcomeFragment : Fragment() {
 
-    private lateinit var binding: FragmentShoeDetailBinding
+    private lateinit var binding: FragmentWelcomeBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_welcome, container, false)
         return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -29,16 +28,8 @@ class ShoeDetailFragment : Fragment() {
     }
 
     private fun setupListeners() {
-        binding.btnSave.setOnClickListener {
-            findNavController().navigate(
-                ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment()
-            )
-        }
-
-        binding.btnCancel.setOnClickListener {
-            findNavController().navigate(
-                ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment()
-            )
+        binding.btnInstructions.setOnClickListener {
+            findNavController().navigate(WelcomeFragmentDirections.actionWelcomeFragmentToInstructionsFragment())
         }
     }
 }
