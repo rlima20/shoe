@@ -16,9 +16,9 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="btnAdd">Add button</string>
-    <string name="name">Shoe</string>
-    <string name="size">39</string>
-    <string name="company">Nike</string>
-    <string name="description">Air Max</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
+    <string name="company">Company</string>
+    <string name="description">Description</string>
     <string name="images">Images</string>
 </resources>
