@@ -8,7 +8,7 @@
 
         <variable
             name="detail"
-            type="com.udacity.shoestore.fragment.ShoeDetailFragment" />
+            type="com.udacity.shoestore.viewModel.ShoeViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -132,6 +132,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/name_hint"
+                android:text="@={detail.name}"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

@@ -10,9 +10,11 @@
             type="com.udacity.shoestore.fragment.ShoeListFragment" />
     </data>
 
+    <!-- Linear layout used here because there are a few views in the layout -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         android:orientation="vertical"
         tools:context=".MainActivity">
 
@@ -20,7 +22,10 @@
             android:id="@+id/nameTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:textSize="32sp" />
 
         <ScrollView
             android:layout_width="match_parent"

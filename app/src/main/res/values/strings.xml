@@ -25,4 +25,5 @@
     <string name="size_hint">Shoe size</string>
     <string name="company_hint">Shoe company</string>
     <string name="description_hint">Shoe description</string>
+    <string name="format">%d</string>
 </resources>
