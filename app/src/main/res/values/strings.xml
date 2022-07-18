@@ -21,4 +21,8 @@
     <string name="company">Company</string>
     <string name="description">Description</string>
     <string name="images">Images</string>
+    <string name="name_hint">Shoe name</string>
+    <string name="size_hint">Shoe size</string>
+    <string name="company_hint">Shoe company</string>
+    <string name="description_hint">Shoe description</string>
 </resources>

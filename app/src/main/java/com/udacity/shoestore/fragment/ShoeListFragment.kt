@@ -69,6 +69,7 @@ class ShoeListFragment : Fragment() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.loginFragment -> {
+                viewModel.onLogout()
                 findNavController().navigate(
                     ShoeListFragmentDirections
                         .actionShoeListFragmentToLoginFragment()

@@ -86,10 +86,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:hint="@string/description_hint"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtDescription" />
+                app:layout_constraintTop_toBottomOf="@+id/txtDescription"
+                tools:ignore="Autofill,LabelFor" />
 
             <EditText
                 android:id="@+id/editTextCompany"
@@ -98,10 +101,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:hint="@string/company_hint"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtCompany" />
+                app:layout_constraintTop_toBottomOf="@+id/txtCompany"
+                tools:ignore="Autofill,LabelFor" />
 
             <EditText
                 android:id="@+id/editTextSize"
@@ -110,10 +116,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:hint="@string/size_hint"
+                android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtSize" />
+                app:layout_constraintTop_toBottomOf="@+id/txtSize"
+                tools:ignore="Autofill,LabelFor" />
 
             <EditText
                 android:id="@+id/editTextName"
@@ -122,10 +131,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:hint="@string/name_hint"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+                app:layout_constraintTop_toBottomOf="@+id/txtName"
+                tools:ignore="Autofill,LabelFor" />
 
             <Button
                 android:id="@+id/btnSave"
