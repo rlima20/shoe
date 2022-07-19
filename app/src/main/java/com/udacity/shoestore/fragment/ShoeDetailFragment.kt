@@ -22,7 +22,7 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_detail, container, false)
-        binding.detail = viewModel
+        binding.viewModel = viewModel
         binding.lifecycleOwner = this
         return binding.root
     }
@@ -34,6 +34,7 @@ class ShoeDetailFragment : Fragment() {
 
     private fun setupListeners() {
         binding.btnSave.setOnClickListener {
+            viewModel.onSaveShoe()
             navigateToShowListFragment()
         }
 

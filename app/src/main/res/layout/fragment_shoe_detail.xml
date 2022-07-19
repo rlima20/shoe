@@ -7,7 +7,7 @@
     <data>
 
         <variable
-            name="detail"
+            name="viewModel"
             type="com.udacity.shoestore.viewModel.ShoeViewModel" />
     </data>
 
@@ -88,6 +88,7 @@
                 android:layout_marginEnd="16dp"
                 android:hint="@string/description_hint"
                 android:inputType="text"
+                android:text="@={viewModel.description}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -103,6 +104,7 @@
                 android:layout_marginEnd="16dp"
                 android:hint="@string/company_hint"
                 android:inputType="text"
+                android:text="@={viewModel.company}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -118,6 +120,7 @@
                 android:layout_marginEnd="16dp"
                 android:hint="@string/size_hint"
                 android:inputType="number"
+                android:text="@={viewModel.size}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -132,8 +135,8 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
                 android:hint="@string/name_hint"
-                android:text="@={detail.name}"
                 android:inputType="text"
+                android:text="@={viewModel.name}"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
