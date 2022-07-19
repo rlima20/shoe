@@ -7,10 +7,15 @@ import com.udacity.shoestore.models.Shoe
 
 class ShoeViewModel : ViewModel() {
 
-    var name: String
-    var size: String
-    var company: String
-    var description: String
+    //Shoe
+    var name: String = ""
+    var size: String = ""
+    var company: String = ""
+    var description: String = ""
+
+    //Login
+    var email: String = ""
+    var password: String = ""
 
     private val _isLogedIn = MutableLiveData<Boolean>()
     val isLogedIn: LiveData<Boolean>
@@ -23,10 +28,6 @@ class ShoeViewModel : ViewModel() {
     init {
         _listOfShoes.value = mutableListOf()
         _isLogedIn.value = false
-        name = ""
-        size = ""
-        company = ""
-        description = ""
     }
 
     fun onSaveShoe() {
@@ -47,5 +48,17 @@ class ShoeViewModel : ViewModel() {
 
     fun onLogout() {
         _isLogedIn.value = false
+        onCleared()
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        name = ""
+        size = ""
+        company = ""
+        description = ""
+        email = ""
+        password = ""
+        _listOfShoes.value?.clear()
     }
 }

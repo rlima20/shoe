@@ -11,6 +11,7 @@
             type="com.udacity.shoestore.viewModel.ShoeViewModel" />
     </data>
 
+    <!-- Constraint layout being used here due to the quantity of views inside this viewGroup -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

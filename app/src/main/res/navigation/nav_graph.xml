@@ -8,16 +8,19 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.fragment.LoginFragment"
-        android:label="LoginFragment"
+        android:label="@string/login_fragment"
         tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_loginFragment_to_welcomeFragment"
             app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment" />
     </fragment>
     <fragment
         android:id="@+id/instructionsFragment"
         android:name="com.udacity.shoestore.fragment.InstructionsFragment"
-        android:label="InstructionsFragment"
+        android:label="@string/instruction_fragment"
         tools:layout="@layout/fragment_instructions">
         <action
             android:id="@+id/action_instructionsFragment_to_shoeListFragment"
@@ -28,7 +31,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.udacity.shoestore.fragment.WelcomeFragment"
-        android:label="welcomeFragment"
+        android:label="@string/welcome_fragment"
         tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_instructionsFragment"
@@ -39,7 +42,7 @@
     <fragment
         android:id="@+id/shoeListFragment"
         android:name="com.udacity.shoestore.fragment.ShoeListFragment"
-        android:label="ShoeListFragment"
+        android:label="@string/shoe_list_fragment"
         tools:layout="@layout/fragment_shoe_list">
         <action
             android:id="@+id/action_shoeListFragment_to_shoeDetailFragment"
@@ -54,7 +57,7 @@
     <fragment
         android:id="@+id/shoeDetailFragment"
         android:name="com.udacity.shoestore.fragment.ShoeDetailFragment"
-        android:label="ShoeDetailFragment"
+        android:label="@string/shoe_detail_fragment"
         tools:layout="@layout/fragment_shoe_detail">
         <action
             android:id="@+id/action_shoeDetailFragment_to_shoeListFragment"

@@ -22,6 +22,8 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
+        binding.viewModel = viewModel
+        binding.lifecycleOwner = this
         return binding.root
     }
 
@@ -32,12 +34,28 @@ class LoginFragment : Fragment() {
 
     private fun setupListeners() {
         binding.btnLogin.setOnClickListener {
-            viewModel.onLogin()
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+            if (onValidateFields()) {
+                viewModel.onLogin()
+                findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+            }
         }
 
         binding.btnNewAccount.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+            //findNavController().navigate(LoginFragmentDirections
+            //.actionLoginFragmentToWelcomeFragment())
         }
+    }
+
+    private fun onValidateFields(): Boolean {
+        var validated = true
+            if (binding.editTextEmail.text.isEmpty()) {
+                binding.editTextEmail.error = "*"
+                validated = false
+            }
+            if (binding.editTextPassword.text.isEmpty()) {
+                binding.editTextPassword.error = "*"
+                validated = false
+            }
+        return validated
     }
 }

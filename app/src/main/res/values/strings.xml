@@ -26,4 +26,9 @@
     <string name="company_hint">Shoe company</string>
     <string name="description_hint">Shoe description</string>
     <string name="format">%d</string>
+    <string name="login_fragment">LoginFragment</string>
+    <string name="instruction_fragment">InstructionsFragment</string>
+    <string name="welcome_fragment">welcomeFragment</string>
+    <string name="shoe_list_fragment">ShoeListFragment</string>
+    <string name="shoe_detail_fragment">ShoeDetailFragment</string>
 </resources>
